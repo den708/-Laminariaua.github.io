@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: #f0f9f8;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* --- Хедер --- */
+.site-header {
+  background: rgba(0, 77, 64, 0.85);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  backdrop-filter: blur(6px);
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.8em;
+  color: #ffd700;
+  text-decoration: none;
+}
+
+.main-nav a {
+  margin-left: 15px;
+  color: #f0fff8;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.main-nav a:hover {
+  color: #00ffe0;
+}
+
+/* --- Герой секція --- */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  min-height: 80vh;
+  background: rgba(0, 50, 40, 0.5);
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  margin-top: 15px;
+  background: #00ffe0;
+  color: #003d36;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #00c6b3;
+  transform: scale(1.05);
+}
+
+/* --- Секції --- */
+.section {
+  background: rgba(0, 50, 40, 0.7);
+  margin: 30px auto;
+  padding: 40px 20px;
+  border-radius: 20px;
+}
+
+.section.alt {
+  background: rgba(0, 77, 64, 0.5);
+}
+
+/* --- Інтерактивні списки --- */
+.interactive-list {
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+  text-align: left;
+}
+
+.interactive-list li {
+  background: rgba(255,255,255,0.1);
+  margin: 10px 0;
+  padding: 12px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.interactive-list li:hover {
+  background: rgba(0, 200, 180, 0.5);
+  transform: scale(1.03);
+}
+
+/* --- Аккордеони --- */
+.accordion .acc-toggle {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  text-align: left;
+  background: rgba(0,0,0,0.3);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.accordion .acc-toggle:hover {
+  background: rgba(0,200,180,0.3);
+}
+
+.accordion .acc-panel {
+  display: none;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  background: rgba(0,0,0,0.2);
+  border-left: 4px solid #00ffe0;
+  border-radius: 0 12px 12px 0;
+}
+
+/* --- Інформаційне вікно --- */
+.info-display {
+  margin-top: 15px;
+  padding: 15px;
+  background: rgba(0,200,180,0.2);
+  border-left: 5px solid #00ffe0;
+  border-radius: 10px;
+  min-height: 50px;
+  transition: 0.3s;
+}
+
+/* --- Довідка і футер --- */
+.cta {
+  background: rgba(0,150,120,0.5);
+  border-radius: 20px;
+  padding: 30px 20px;
+}
+
+.site-footer {
+  background: rgba(0,50,40,0.95);
+  color: #00ffe0;
+  text-align: center;
+  padding: 25px 0;
+  margin-top: 30px;
+  font-size: 1em;
+  border-top: 3px solid #00ffe0;
+}
